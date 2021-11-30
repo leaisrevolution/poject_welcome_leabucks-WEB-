@@ -11,6 +11,10 @@ img {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER */
 header {
     background-color: royalblue;
@@ -37,26 +41,49 @@ header .sub-munu {
 
 }
 
-header .sub-munu ul.menu {
-
+header .sub-menu ul.menu {
+    font-family: Arial, sans-serif;
+    display: flex;
 }
 
-header .sub-munu ul.menu li {
-
+header .sub-menu ul.menu li {
+    position: relative;
 }
 
-header .sub-munu ul.menu li a {
-    background-color: white;
-
+header .sub-menu ul.menu li::before {
+    content: "";
+    /* display: block; */
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
 }
 
-header .sub-munu .search {
+header .sub-menu ul.menu li:first-child::before {
+    display: none;
+}
+
+header .sub-menu ul.menu li a {
+    font-size: 12px;
+    padding: 11px 16px;
+    display: block;
+    color: #656565;
+}
+
+header .sub-menu ul.menu li a:hover {
+    color: #000;
+}
+
+header .sub-menu .search {
 
 }
-header .sub-munu .search input {
+header .sub-menu .search input {
 
 }
-header .sub-munu .search .material-icons {
+header .sub-menu .material-icons {
 
 }
 
