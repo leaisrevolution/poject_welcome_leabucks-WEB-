@@ -1,6 +1,7 @@
 <h2>Welcome, LEABUCKS</h2>
-<h3>WEB Mini Project</h3>
-
+<h3>WEB site Mini Project</h3>
+Project goals and objectives : HTML, CSS, JavaScript 를 이용하여 레아벅스 웹 사이트 프로젝트에 구현한다.
+<br>
 <h3>Todo list</h3>
 <ul>
     <li>프로젝트 시작, 스타일 초기화, 파비콘</li>
