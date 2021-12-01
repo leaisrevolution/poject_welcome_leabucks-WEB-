@@ -16,24 +16,6 @@ searchInputEl.addEventListener('blur', function() {
     searchInputEl.setAttribute('placeholder', '');
 });
 
-// const badgeEl = document.querySelector('geader .badges');
-// // window는 출력되고 있는 화면 자체
-// // _.throttle (함수, 시간)
-// // 300 === 0.3초를 의미
-// window.addEventListener('scroll', _.throttle(function() {
-//     console.log(window.scrollY);
-//     if (window.scrollY > 500) {
-//         //배지 숨기기
-//         //gsap.to(요소, 지속시간, 오션)
-//         gsap.to(badgeEl, .6, {
-//             opacity: 0
-//         });
-//     } else {
-//         //배지 보이기
-
-//     }
-// }, 300));
-
 
 const badgeEl = document.querySelector('header .badges')
 const toTopEl = document.querySelector('#to-top')
