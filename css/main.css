@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
 /* HEADER */
 header {
     background-color: #f6f5f0;
@@ -22,10 +28,7 @@ header {
 }
 
 header .inner {
-    width: 1100px;
     height: 120px;
-    margin: 0 auto; /* 가운데 정렬 시켜줌 */
-    position: relative;
 }
 
 header .logo {
