@@ -83,3 +83,20 @@ new Swiper('.notice-line .swiper-container', {
   loop: true // 반복 재생 여부
 });
 
+new Swiper('.promotion .swiper-container', {
+  slidesPerView: 3, // 한번에 보여줄 슬라이드
+  spaceBetween: 10, // 슬라이드 사이 여백
+  ceteredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.promtion .swiper-pagination', //페이지 번호 요소 선택자
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.promotion .swiper-prv',
+    nextEl: '.promotion .swiper-next'
+  }
+});
