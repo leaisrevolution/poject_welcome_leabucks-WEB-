@@ -47,7 +47,7 @@ window.addEventListener('scroll', _.throttle(function () {
     })
 }
 }, 300))
-// 상단으로 스크롤 버튼을 클릭하면,
+  // 상단으로 스크롤 버튼을 클릭하면,
 toTopEl.addEventListener('click', function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
     gsap.to(window, .7, {
@@ -55,6 +55,24 @@ toTopEl.addEventListener('click', function () {
     })
 })
 
+// const fadeEls = document.querySelectorAll('.visual .fade-in');
+// fadeEls.forEach(function(fadeEl, index) {
+//   // gsap.to(요소,지속시간, 옵션);
+//   gsap.to(fadeEl, 1, {
+//     delay: (index + 1) * .7, // 0.7, 1.4, 2.1, 2.7
+//     opacity: 1
+//   });
+// });
 
+
+const fadeEls = document.querySelectorAll('.visual .fade-in')
+// 나타날 요소들을 하나씩 반복해서 처리!
+fadeEls.forEach(function (fadeEl, index) {
+  // 각 요소들을 순서대로(delay) 보여지게 함!
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .7,
+    opacity: 1
+  })
+})
 
 
