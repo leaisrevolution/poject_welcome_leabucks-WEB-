@@ -99,4 +99,23 @@ new Swiper('.promotion .swiper-container', {
     prevEl: '.promotion .swiper-prev', // 이전 버튼 선택자
     nextEl: '.promotion .swiper-next' // 다음 버튼 선택자
   }
+});
+
+// 슬라이드 영역 요소 검색!
+const promotionEl = document.querySelector('.promotion')
+// 슬라이드 영역를 토글하는 버튼 검색!
+const promotionToggleBtn = document.querySelector('.toggle-promotion')
+// 슬라이드 영역 숨김 여부 기본값!
+let isHidePromotion = false
+// 토글 버튼을 클릭하면,
+promotionToggleBtn.addEventListener('click', function () {
+  // 슬라이드 영역 숨김 여부를 반댓값으로 할당!
+  isHidePromotion = !isHidePromotion
+  // 요소를 숨겨야 하면,
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide')
+  // 요소가 보여야 하면,
+  } else {
+    promotionEl.classList.remove('hide')
+  }
 })
